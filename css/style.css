@@ -195,7 +195,7 @@ select {
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 600px) {  .shadow-dark {     width: 100%;   } }
+@media (max-width: 600px) {  .shadow-dark {  width: 100%;  } }
 .btn {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
@@ -1218,3 +1218,175 @@ body {
     cursor: pointer;
 }
 
+/* Contact Section */
+
+.contact .contact-info-item {
+    flex: 0 0 33.33%;
+    -ms-flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-info-item .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    background-color: #f0f2f5; /* Un gris muy claro para el fondo del icono */
+    border-radius: 50%;
+    color: #34495e; /* Un azul oscuro para el icono */
+    transition: all 0.3s ease;
+}
+
+.contact .contact-info-item .icon:hover {
+    background-color: #e0e2e5; /* Un gris un poco más oscuro al pasar el ratón */
+}
+
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50; /* Título en azul oscuro casi negro */
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #7f8c8d; /* Texto en gris medio */
+    margin: 0;
+    word-break: break-word; /* Para asegurar que el texto largo se rompa correctamente */
+}
+
+.contact .contact-form {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item {
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff; /* Fondo blanco para los campos del formulario */
+    border: 1px solid #dcdfe3; /* Borde suave y neutro */
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #333333; /* Color de texto en los campos */
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+    border-color: #95a5a6; /* Borde al enfocar en gris más oscuro */
+}
+
+.contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+    resize: none;
+}
+
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .section .container {
+        padding-top: 70px;
+    }
+    .aside {
+        left: -270px;
+    }
+    .aside.open {
+        left: 0;
+    }
+    .section {
+        left: 0;
+    }
+    .section.open {
+        left: 270px;
+    }
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open {
+        left: 300px;
+    }
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .skills {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio .portfolio-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .contact .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio .portfolio-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .contact .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .intro {
+        padding: 50px 15px;
+    }
+    .about .about-content .timeline {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .personal-info .info-item p {
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact .contact-form .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
